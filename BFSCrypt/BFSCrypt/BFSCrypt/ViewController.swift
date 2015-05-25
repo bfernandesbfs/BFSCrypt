@@ -21,6 +21,11 @@ class ViewController: UIViewController {
         var descrypted = crypt.decryptBase64String(encrypted, key: key)
         println(encrypted)
         println(descrypted)
+        
+        var encryptedExtension = text.encryptStringWithKey(key)
+        var decryptedExtension = encryptedExtension.decryptStringWithKey(key)
+        println(encryptedExtension)
+        println(decryptedExtension)
     }
 
     override func didReceiveMemoryWarning() {
