@@ -16,3 +16,10 @@ Encrypt
 Decrypt
 
         var descrypted = crypt.decryptBase64String(encrypted, key: key)
+
+Usando Extension
+
+        var encryptedExtension = text.encryptStringWithKey(key)
+        var decryptedExtension = encryptedComExtesion.decryptStringWithKey(key)
+        println(encryptedExtension)
+        println(encryptedExtension)
