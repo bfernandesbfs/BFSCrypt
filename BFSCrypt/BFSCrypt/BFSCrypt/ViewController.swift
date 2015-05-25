@@ -22,10 +22,12 @@ class ViewController: UIViewController {
         println(encrypted)
         println(descrypted)
         
+        //Usando Extension
         var encryptedExtension = text.encryptStringWithKey(key)
         var decryptedExtension = encryptedExtension.decryptStringWithKey(key)
         println(encryptedExtension)
         println(decryptedExtension)
+        
     }
 
     override func didReceiveMemoryWarning() {
