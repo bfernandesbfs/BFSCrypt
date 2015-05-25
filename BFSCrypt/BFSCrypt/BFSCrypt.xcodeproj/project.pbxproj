@@ -13,6 +13,7 @@
 		4A1694721B13499F00AED486 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A1694711B13499F00AED486 /* Images.xcassets */; };
 		4A1694751B13499F00AED486 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A1694731B13499F00AED486 /* LaunchScreen.xib */; };
 		4A1694811B13499F00AED486 /* BFSCryptTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1694801B13499F00AED486 /* BFSCryptTests.swift */; };
+		4A16948B1B134A2700AED486 /* BFSCryptAES.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A16948A1B134A2700AED486 /* BFSCryptAES.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,8 @@
 		4A16947A1B13499F00AED486 /* BFSCryptTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BFSCryptTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A16947F1B13499F00AED486 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4A1694801B13499F00AED486 /* BFSCryptTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BFSCryptTests.swift; sourceTree = "<group>"; };
+		4A16948A1B134A2700AED486 /* BFSCryptAES.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BFSCryptAES.swift; sourceTree = "<group>"; };
+		4A16948C1B134BC400AED486 /* BFSCrypt-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BFSCrypt-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +86,8 @@
 				4A1694711B13499F00AED486 /* Images.xcassets */,
 				4A1694731B13499F00AED486 /* LaunchScreen.xib */,
 				4A1694681B13499F00AED486 /* Supporting Files */,
+				4A16948A1B134A2700AED486 /* BFSCryptAES.swift */,
+				4A16948C1B134BC400AED486 /* BFSCrypt-Bridging-Header.h */,
 			);
 			path = BFSCrypt;
 			sourceTree = "<group>";
@@ -213,6 +218,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A16946D1B13499F00AED486 /* ViewController.swift in Sources */,
+				4A16948B1B134A2700AED486 /* BFSCryptAES.swift in Sources */,
 				4A16946B1B13499F00AED486 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -342,9 +348,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = BFSCrypt/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BFSCrypt/BFSCrypt-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -352,9 +361,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = BFSCrypt/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BFSCrypt/BFSCrypt-Bridging-Header.h";
 			};
 			name = Release;
 		};
